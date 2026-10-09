@@ -4,6 +4,7 @@ from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from urllib.parse import quote
 import os
+import re
 from newspaper import Article
 # === CONFIG ===
 scrape_content = False  # Set to True if you want full article scraping
@@ -123,7 +124,21 @@ local_feeds = {
     "NZ Herald Business": (_gn("nzherald.co.nz/business"), "NZ", "APAC-DM", "en"),                  # [7]
 }
 local_csv_path = f"data/localpress_{today}.csv"
+local_log_path = "data/local_feed_log.csv"   # one row per feed per run: what the feed returned and what was kept
 _UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+# Section, index and programme pages that search feeds return as if they were articles (seen on the first run,
+# 2026-10-09). Matched on the title without its " - Outlet" suffix; one-word titles are topic pages too.
+_JUNK = re.compile(
+    r"(?i)^(briefing am |update wirtschaft vom |tg economia\b|yonhap news summary$|business daily$|companies and deals$"
+    r"|hemeroteca$|events of |podcast:|découvrez la nouvelle newsletter"
+    r"|what happened (mon|tues|wednes|thurs|fri|satur|sun)day$)"
+    r"|die neusten meldungen$|\| page \d+$|actualités, information, interviews et vidéos|\barchives$|latest headlines|home ?page")
+
+
+def _junk(title, suffixed=True):
+    """suffixed: Google News titles end in " - Outlet", which is stripped first; native RSS titles are left whole."""
+    core = (re.sub(r"\s+[-|–]\s+[^-|–]+$", "", str(title)) if suffixed else str(title)).strip()
+    return len(core.split()) <= 1 or bool(_JUNK.search(core))
 
 # === Scraping Function ===
 def scrape_article_content(url):
@@ -226,28 +241,39 @@ def scrape_local(save=True):
             except Exception as e:
                 print(f"Warning: could not read {p}: {e}")
     cutoff = datetime.now(timezone.utc) - timedelta(days=LOCAL_MAX_AGE_D)
-    rows, per_feed = [], {}
+    run_ts = datetime.now().isoformat(timespec="seconds")
+    rows, per_feed, log = [], {}, []
     for source, (url, market, region, lang) in local_feeds.items():
+        rec = dict(run=run_ts, source=source, status=None, entries=0, new=0, seen=0, stale=0, junk=0, error="")
         try:
             feed = feedparser.parse(url, agent=_UA)
+            rec.update(status=feed.get("status"), entries=len(feed.entries),
+                       error=str(feed.get("bozo_exception", ""))[:120] if feed.bozo and not feed.entries else "")
         except Exception as e:
             print(f"  {source}: failed ({e})")
+            rec["error"] = str(e)[:120]
+            log.append(rec)
             continue
-        n = 0
         for entry in feed.entries:
             title, link = entry.get("title"), entry.get("link")
             if not title or not link or link in seen_links or title in seen_titles:
+                rec["seen"] += 1
                 continue
             pub = _published(entry)
             if pub is not None and pub < cutoff:
+                rec["stale"] += 1
                 continue
-            rows.append({"timestamp": datetime.now().isoformat(timespec="seconds"), "source": source, "market": market,
+            if _junk(title, "news.google.com" in url):
+                rec["junk"] += 1
+                continue
+            rows.append({"timestamp": run_ts, "source": source, "market": market,
                          "region": region, "lang": lang, "title": title, "link": link,
                          "published": entry.get("published", "N/A")})
             seen_links.add(link)
             seen_titles.add(title)
-            n += 1
-        per_feed[source] = n
+            rec["new"] += 1
+        per_feed[source] = rec["new"]
+        log.append(rec)
     if save and rows:
         df = pd.DataFrame(rows)
         if os.path.exists(local_csv_path):
@@ -256,6 +282,14 @@ def scrape_local(save=True):
         print(f"✅ {len(rows)} new local-press items saved to {local_csv_path}")
     elif not rows:
         print("No new local-press items.")
+    if save:
+        lg = pd.DataFrame(log)
+        if os.path.exists(local_log_path):
+            lg = pd.concat([pd.read_csv(local_log_path), lg], ignore_index=True)
+        lg.to_csv(local_log_path, index=False)
+    empty = [r["source"] for r in log if r["entries"] == 0]
+    print(f"  local feeds: {sum(r['entries'] > 0 for r in log)}/{len(log)} answered; "
+          f"junk dropped {sum(r['junk'] for r in log)}; empty: {empty}")
     return rows, per_feed
 
 
