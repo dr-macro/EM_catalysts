@@ -4799,3 +4799,63 @@ run,source,status,entries,new,seen,stale,junk,error
 2026-10-24T21:17:17,AFR,200.0,100,1,61,38,0,
 2026-10-24T21:17:17,interest.co.nz,200.0,100,1,29,70,0,
 2026-10-24T21:17:17,NZ Herald Business,200.0,100,0,2,98,0,
+2026-10-25T01:23:01,Politico Europe,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Les Echos,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Le Figaro Eco,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Le Monde Economie,200.0,20,11,9,0,0,
+2026-10-25T01:23:01,Handelsblatt,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,FAZ Wirtschaft,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Tagesschau Wirtschaft,200.0,35,11,12,11,1,
+2026-10-25T01:23:01,Il Sole 24 Ore,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Milano Finanza,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,BBC Business,200.0,55,9,22,24,0,
+2026-10-25T01:23:01,Guardian Business,200.0,35,11,21,3,0,
+2026-10-25T01:23:01,Telegraph Business,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Expansion,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Cinco Dias,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,NZZ,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Swissinfo,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,DutchNews,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Brussels Times,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,RTE Business,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Kathimerini,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Die Presse,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,ECO,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,BBJ,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Daily News Hungary,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Telex English,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Hungary Today,200.0,5,1,4,0,0,
+2026-10-25T01:23:01,TVP World,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Notes from Poland,200.0,12,2,3,7,0,
+2026-10-25T01:23:01,PAP English,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Radio Prague Intl,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,bne IntelliNews,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Globes,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Times of Israel,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Moneyweb,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,News24 Business,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Daily Maverick,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Valor International,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Folha English,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Valor Economico,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Mexico News Daily,200.0,10,1,9,0,0,
+2026-10-25T01:23:01,El Financiero,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,La Republica,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Valora Analitik,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Diario Financiero,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,La Tercera Pulso,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,MercoPress,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Bloomberg Linea,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Yonhap,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Korea Times,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Business Times SG,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Straits Times,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,The Edge Malaysia,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,The Star Business,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Bangkok Post Business,200.0,10,2,8,0,0,
+2026-10-25T01:23:01,Nation Thailand,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Nikkei Asia,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,Japan Times Business,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,AFR,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,interest.co.nz,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-10-25T01:23:01,NZ Herald Business,503.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
