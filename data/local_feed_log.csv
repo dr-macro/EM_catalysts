@@ -10619,3 +10619,63 @@ run,source,status,entries,new,seen,stale,junk,error
 2026-11-16T16:32:04,AFR,200.0,100,12,49,39,0,
 2026-11-16T16:32:04,interest.co.nz,200.0,100,5,15,79,1,
 2026-11-16T16:32:04,NZ Herald Business,200.0,100,1,17,82,0,
+2026-11-17T00:32:57,Politico Europe,200.0,100,14,22,64,0,
+2026-11-17T00:32:57,Les Echos,200.0,100,18,34,48,0,
+2026-11-17T00:32:57,Le Figaro Eco,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,Le Monde Economie,200.0,20,8,12,0,0,
+2026-11-17T00:32:57,Handelsblatt,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,FAZ Wirtschaft,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,Tagesschau Wirtschaft,200.0,26,4,14,7,1,
+2026-11-17T00:32:57,Il Sole 24 Ore,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,Milano Finanza,200.0,100,22,37,40,1,
+2026-11-17T00:32:57,BBC Business,200.0,56,10,12,34,0,
+2026-11-17T00:32:57,Guardian Business,200.0,40,27,13,0,0,
+2026-11-17T00:32:57,Telegraph Business,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,Expansion,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,Cinco Dias,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,NZZ,200.0,100,13,28,55,4,
+2026-11-17T00:32:57,Swissinfo,200.0,77,5,9,63,0,
+2026-11-17T00:32:57,DutchNews,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,Brussels Times,200.0,88,8,8,72,0,
+2026-11-17T00:32:57,RTE Business,200.0,100,8,5,87,0,
+2026-11-17T00:32:57,Kathimerini,200.0,100,18,26,56,0,
+2026-11-17T00:32:57,Die Presse,200.0,100,12,28,60,0,
+2026-11-17T00:32:57,ECO,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,BBJ,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,Daily News Hungary,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,Telex English,200.0,33,0,2,31,0,
+2026-11-17T00:32:57,Hungary Today,200.0,5,0,5,0,0,
+2026-11-17T00:32:57,TVP World,200.0,100,9,8,83,0,
+2026-11-17T00:32:57,Notes from Poland,200.0,12,2,2,8,0,
+2026-11-17T00:32:57,PAP English,200.0,80,2,5,73,0,
+2026-11-17T00:32:57,Radio Prague Intl,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,bne IntelliNews,200.0,100,15,28,57,0,
+2026-11-17T00:32:57,Globes,200.0,17,0,0,17,0,
+2026-11-17T00:32:57,Times of Israel,200.0,100,29,41,30,0,
+2026-11-17T00:32:57,Moneyweb,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,News24 Business,200.0,100,11,23,66,0,
+2026-11-17T00:32:57,Daily Maverick,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,Valor International,200.0,59,0,0,59,0,
+2026-11-17T00:32:57,Folha English,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,Valor Economico,200.0,100,27,39,34,0,
+2026-11-17T00:32:57,Mexico News Daily,200.0,10,9,1,0,0,
+2026-11-17T00:32:57,El Financiero,200.0,100,7,14,79,0,
+2026-11-17T00:32:57,La Republica,200.0,100,16,26,58,0,
+2026-11-17T00:32:57,Valora Analitik,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,Diario Financiero,200.0,100,15,12,73,0,
+2026-11-17T00:32:57,La Tercera Pulso,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,MercoPress,200.0,93,5,11,77,0,
+2026-11-17T00:32:57,Bloomberg Linea,200.0,100,12,10,78,0,
+2026-11-17T00:32:57,Yonhap,200.0,100,2,16,82,0,
+2026-11-17T00:32:57,Korea Times,200.0,100,17,24,59,0,
+2026-11-17T00:32:57,Business Times SG,200.0,100,10,27,63,0,
+2026-11-17T00:32:57,Straits Times,200.0,100,25,38,37,0,
+2026-11-17T00:32:57,The Edge Malaysia,200.0,100,3,23,74,0,
+2026-11-17T00:32:57,The Star Business,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,Bangkok Post Business,200.0,10,8,2,0,0,
+2026-11-17T00:32:57,Nation Thailand,200.0,100,17,26,57,0,
+2026-11-17T00:32:57,Nikkei Asia,200.0,100,12,22,66,0,
+2026-11-17T00:32:57,Japan Times Business,200.0,100,2,10,87,1,
+2026-11-17T00:32:57,AFR,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,interest.co.nz,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
+2026-11-17T00:32:57,NZ Herald Business,429.0,0,0,0,0,0,<unknown>:2:252: not well-formed (invalid token)
